@@ -38,20 +38,6 @@ class NabbleWidget {
 		 * IS WORKING ONLY WITH MY MAILINGLIST
 		 */
 		return "<div style=\"width:".$width."em;height:".$height."em;overflow:auto;\"><a id='nabblelink' href='".$src."'>".wfMessage( 'view-the-mailinglist' )->text()."</a>
-				<script src=\"".$src."/embed/f1\"></script></div>";
-				
-				/**
-				 * IF I REPLACE THE LIGNE ABOVE BY HIS CONTENT, IT DOESN'T WORK
-				 * 
-				<script>var link=document.getElementById(\"nabblelink\");
-				if (link != null) {
-					link.style.display=\"none\";
-					document.write(\"<div id='nabbleforum' style='width:100%'><div style='height:700px'><img src='http://x6.nabble.com/images/loading.png' width='94' height='33' alt='Loading...'></div></div>\");
-					var e = document.createElement(\"script\");
-					e.src = 'http://x6.nabble.com/embed/JsEmbed.jtp?site=     >>>>> 55474 <<<<< &node=1&url=' + encodeURIComponent(location.href);
-							e.type=\"text/javascript\";
-					document.getElementsByTagName(\"head\")[0].appendChild(e);
-				}</script></div>";
-				*/
+				<script src=\"".$script."\"></script></div>";
 	}
 }
