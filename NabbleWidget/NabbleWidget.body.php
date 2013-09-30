@@ -23,6 +23,13 @@ class NabbleWidget {
 		else{
 			return wfMessage( 'no-src-parameter' )->text();
 		}
+
+		if( isset($args['script']) && $args['script'] ){
+			$script = $args['script'];
+		}
+		else{
+			return wfMessage( 'no-src-parameter' )->text();
+		}
 		
 		if( isset($args['width']) && $args['width'] ){
 			$width = $args['width'];
